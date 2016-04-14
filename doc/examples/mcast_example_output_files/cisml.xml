@@ -1,0 +1,914 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>mcast</program-name>
+<parameters>
+<pattern-file>Klf1.dreme</pattern-file>
+<sequence-file>Klf1.fna</sequence-file>
+<pattern-pvalue-cutoff>0.0005</pattern-pvalue-cutoff>
+<sequence-pvalue-cutoff>1</sequence-pvalue-cutoff>
+</parameters>
+<multi-pattern-scan score="19.9762" pvalue="0.0010134">
+<pattern accession="RARGAAA" name="RARGAAA">
+<scanned-sequence accession="chr2" name="chr2">
+<matched-element start="25869325" stop="25869331" pvalue="7.558e-05">
+<sequence>GAGGAAA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr2" name="chr2">
+<matched-element start="25869342" stop="25869335" pvalue="5.4264e-05">
+<sequence>GGGTGAGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CTGTSTS" name="CTGTSTS">
+<scanned-sequence accession="chr2" name="chr2">
+<matched-element start="25869351" stop="25869357" pvalue="4.9332e-05">
+<sequence>CTGTCTG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCTKCCY" name="CCTKCCY">
+<scanned-sequence accession="chr2" name="chr2">
+<matched-element start="25869377" stop="25869383" pvalue="3.3007e-05">
+<sequence>CCTGCCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr2" name="chr2">
+<matched-element start="25869402" stop="25869409" pvalue="1.7002e-05">
+<sequence>CCACACCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="MCRCCCA" name="MCRCCCA">
+<scanned-sequence accession="chr2" name="chr2">
+<matched-element start="25869414" stop="25869420" pvalue="4.2831e-05">
+<sequence>CCACCCA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CACAGY" name="CACAGY">
+<scanned-sequence accession="chr2" name="chr2">
+<matched-element start="25869428" stop="25869423" pvalue="0.00042444">
+<sequence>ACTGTG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr2" name="chr2">
+<matched-element start="25869448" stop="25869442" pvalue="8.8278e-05">
+<sequence>AGATAAG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<mem:match cluster-id="cluster-66" seq-name="chr2" start="25869325" stop="25869448" evalue="1.0539" qvalue="0.65026">GAGGAAAGCAGGGTGAGGCCCAGGATCTGTCTGGTGAAGATGGATGGAGCAACCTGCCCATGTGCTGCTGACTGTACCCACACCCACATCCACCCATCACTGTGGCCAGGTGGTCAAAGATAAG
+</mem:match>
+</multi-pattern-scan>
+<multi-pattern-scan score="20.5688" pvalue="0.0018978">
+<pattern accession="AKAAAM" name="AKAAAM">
+<scanned-sequence accession="chr6" name="chr6">
+<matched-element start="136416876" stop="136416881" pvalue="0.00040654">
+<sequence>AGAAAA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CATYTCC" name="CATYTCC">
+<scanned-sequence accession="chr6" name="chr6">
+<matched-element start="136416889" stop="136416883" pvalue="0.00034106">
+<sequence>GGGAATG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr6" name="chr6">
+<matched-element start="136416898" stop="136416891" pvalue="1.9068e-05">
+<sequence>GGGTGGGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr6" name="chr6">
+<matched-element start="136416907" stop="136416900" pvalue="0.00019512">
+<sequence>GGGTGGGA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="AGGGCGK" name="AGGGCGK">
+<scanned-sequence accession="chr6" name="chr6">
+<matched-element start="136416935" stop="136416941" pvalue="3.9291e-05">
+<sequence>AGGGCGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="AGGGCGK" name="AGGGCGK">
+<scanned-sequence accession="chr6" name="chr6">
+<matched-element start="136416956" stop="136416962" pvalue="0.00020358">
+<sequence>GGGGCGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="AGGGCGK" name="AGGGCGK">
+<scanned-sequence accession="chr6" name="chr6">
+<matched-element start="136416971" stop="136416965" pvalue="3.3007e-05">
+<sequence>CCGCCCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CTGTSTS" name="CTGTSTS">
+<scanned-sequence accession="chr6" name="chr6">
+<matched-element start="136416988" stop="136416994" pvalue="0.00019737">
+<sequence>CTGTGTC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CAGMCAC" name="CAGMCAC">
+<scanned-sequence accession="chr6" name="chr6">
+<matched-element start="136416999" stop="136417005" pvalue="4.4154e-05">
+<sequence>CAGCCAC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="AGGGCGK" name="AGGGCGK">
+<scanned-sequence accession="chr6" name="chr6">
+<matched-element start="136417018" stop="136417024" pvalue="3.9291e-05">
+<sequence>AGGGCGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CAGMCAC" name="CAGMCAC">
+<scanned-sequence accession="chr6" name="chr6">
+<matched-element start="136417058" stop="136417064" pvalue="4.4154e-05">
+<sequence>CAGCCAC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<mem:match cluster-id="cluster-370" seq-name="chr6" start="136416876" stop="136417064" evalue="1.9737" qvalue="0.65026">AGAAAAAGGGAATGGGGGTGGGGTGGGTGGGAGATTGTTGTAGGACACTGGATTGAGGGAGGGCGGGAGGTGTAGAGAATGGGGCGGTTCCGCCCTAACAAAGAGGCAGAAACTGTGTCTCAACAGCCACCAAATCCAGTTCAGGGCGGTTTGAGCCAGTTTCTGAGCTGGATTGAGAACAACAGCCAC
+</mem:match>
+</multi-pattern-scan>
+<multi-pattern-scan score="16.2056" pvalue="0.0029797">
+<pattern accession="CCTKCCY" name="CCTKCCY">
+<scanned-sequence accession="chr9" name="chr9">
+<matched-element start="21940152" stop="21940158" pvalue="3.3007e-05">
+<sequence>CCTGCCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr9" name="chr9">
+<matched-element start="21940161" stop="21940168" pvalue="0.00021352">
+<sequence>CCACTCCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="AKAAAM" name="AKAAAM">
+<scanned-sequence accession="chr9" name="chr9">
+<matched-element start="21940188" stop="21940183" pvalue="0.00030313">
+<sequence>TTTTCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCTKCCY" name="CCTKCCY">
+<scanned-sequence accession="chr9" name="chr9">
+<matched-element start="21940190" stop="21940196" pvalue="0.00018974">
+<sequence>CCTCCCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr9" name="chr9">
+<matched-element start="21940208" stop="21940215" pvalue="1.7002e-05">
+<sequence>CCACACCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CACAGY" name="CACAGY">
+<scanned-sequence accession="chr9" name="chr9">
+<matched-element start="21940229" stop="21940224" pvalue="0.00019023">
+<sequence>GCTGTG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr9" name="chr9">
+<matched-element start="21940259" stop="21940266" pvalue="1.7002e-05">
+<sequence>CCACACCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr9" name="chr9">
+<matched-element start="21940278" stop="21940284" pvalue="0.00014571">
+<sequence>CTTATCA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="AKAAAM" name="AKAAAM">
+<scanned-sequence accession="chr9" name="chr9">
+<matched-element start="21940303" stop="21940298" pvalue="0.00030313">
+<sequence>TTTTCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr9" name="chr9">
+<matched-element start="21940341" stop="21940347" pvalue="0.00023112">
+<sequence>TTTATCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="RARGAAA" name="RARGAAA">
+<scanned-sequence accession="chr9" name="chr9">
+<matched-element start="21940358" stop="21940352" pvalue="0.0001232">
+<sequence>TTTCCTT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CTGTSTS" name="CTGTSTS">
+<scanned-sequence accession="chr9" name="chr9">
+<matched-element start="21940376" stop="21940382" pvalue="0.00014804">
+<sequence>CTGTCTC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<mem:match cluster-id="cluster-519" seq-name="chr9" start="21940152" stop="21940382" evalue="3.0989" qvalue="0.65026">CCTGCCCTGCCACTCCCTTGACTTTCTCTCTTTTTCTCCCTCCCCTCCGCCGCCGCCCACACCCGAGTGCTAGCTGTGGACCTAGGGGCTCTTGATCTACCACTGAGCCACACCCAAGTGTCCAGGCTTATCATCTTGCCTTAGCTTTTTCTGTAGCACATTATCAATGCCTGGCCAGTGTCTTGTGTATTTATCTTCTTTTTCCTTTCTCTCCACCTGCTTGGCTGTCTC
+</mem:match>
+</multi-pattern-scan>
+<multi-pattern-scan score="20.9224" pvalue="0.0033491">
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr14" name="chr14">
+<matched-element start="71023801" stop="71023808" pvalue="3.8537e-05">
+<sequence>CCGCACCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="AGGGCGK" name="AGGGCGK">
+<scanned-sequence accession="chr14" name="chr14">
+<matched-element start="71023827" stop="71023821" pvalue="0.00017608">
+<sequence>CCGCCCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr14" name="chr14">
+<matched-element start="71023831" stop="71023837" pvalue="7.0938e-05">
+<sequence>CTTATCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr14" name="chr14">
+<matched-element start="71023853" stop="71023860" pvalue="0.00010169">
+<sequence>CCCCACCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="MCRCCCA" name="MCRCCCA">
+<scanned-sequence accession="chr14" name="chr14">
+<matched-element start="71023865" stop="71023871" pvalue="4.2831e-05">
+<sequence>CCACCCA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CATYTCC" name="CATYTCC">
+<scanned-sequence accession="chr14" name="chr14">
+<matched-element start="71023878" stop="71023884" pvalue="0.00010784">
+<sequence>CATTTCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CTGGRGA" name="CTGGRGA">
+<scanned-sequence accession="chr14" name="chr14">
+<matched-element start="71023913" stop="71023907" pvalue="4.1891e-05">
+<sequence>TCCCCAG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr14" name="chr14">
+<matched-element start="71023928" stop="71023922" pvalue="0.00017203">
+<sequence>TGATAAG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CTGGRGA" name="CTGGRGA">
+<scanned-sequence accession="chr14" name="chr14">
+<matched-element start="71023950" stop="71023944" pvalue="9.233e-05">
+<sequence>TCTCCAG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCTKCCY" name="CCTKCCY">
+<scanned-sequence accession="chr14" name="chr14">
+<matched-element start="71023958" stop="71023964" pvalue="0.00023038">
+<sequence>CCTACCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCTKCCY" name="CCTKCCY">
+<scanned-sequence accession="chr14" name="chr14">
+<matched-element start="71023976" stop="71023970" pvalue="8.7663e-05">
+<sequence>AGGCAGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<mem:match cluster-id="cluster-839" seq-name="chr14" start="71023801" stop="71023976" evalue="3.4831" qvalue="0.65026">CCGCACCCACCTTCAGCTGGCCGCCCCAGCCTTATCTGAGCCACCAGCCAGGCCCCACCTCAAACCACCCACCCTCTCATTTCCACGGCAACCAGAGCTTTGCAGCTCCCCAGGATATGGGTGATAAGACTTGCCCACAGGGATCTCCAGGTTGGCACCTACCCATCCCAGGCAGG
+</mem:match>
+</multi-pattern-scan>
+<multi-pattern-scan score="21.5795" pvalue="0.0038135">
+<pattern accession="CAGMCAC" name="CAGMCAC">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65255973" stop="65255979" pvalue="0.00010019">
+<sequence>CAGACAC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CAGMCAC" name="CAGMCAC">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65255983" stop="65255989" pvalue="4.4154e-05">
+<sequence>CAGCCAC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CACAGY" name="CACAGY">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65255995" stop="65256000" pvalue="0.00043833">
+<sequence>CACAGT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCTKCCY" name="CCTKCCY">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65256026" stop="65256032" pvalue="7.275e-05">
+<sequence>CCTGCCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="RARGAAA" name="RARGAAA">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65256053" stop="65256047" pvalue="0.00027153">
+<sequence>TTTCTTC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65256072" stop="65256079" pvalue="1.7002e-05">
+<sequence>CCACACCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65256090" stop="65256097" pvalue="1.7002e-05">
+<sequence>CCACACCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="MCRCCCA" name="MCRCCCA">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65256109" stop="65256115" pvalue="4.2831e-05">
+<sequence>CCACCCA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65256126" stop="65256133" pvalue="1.7002e-05">
+<sequence>CCACACCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<mem:match cluster-id="cluster-276" seq-name="chr5" start="65255973" stop="65256133" evalue="3.966" qvalue="0.65026">CAGACACCACCAGCCACTTCCCCACAGTCAGTCAGACCTGGGCCACTGGGTCCCCTGCCTTGTTGCTTGGCAGCTTTCTTCAAGGCCTGGCCTGGGCAGCCACACCCAACATTCTCACCACACCCTGTAATTCTCGCCACCCAGAAGTTCTTGCCACACCC
+</mem:match>
+</multi-pattern-scan>
+<multi-pattern-scan score="20.8021" pvalue="0.0038806">
+<pattern accession="MCRCCCA" name="MCRCCCA">
+<scanned-sequence accession="chr3" name="chr3">
+<matched-element start="97461949" stop="97461943" pvalue="0.00013459">
+<sequence>TGGGCGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CACAGY" name="CACAGY">
+<scanned-sequence accession="chr3" name="chr3">
+<matched-element start="97461956" stop="97461961" pvalue="0.00019887">
+<sequence>CACAGC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr3" name="chr3">
+<matched-element start="97461968" stop="97461975" pvalue="0.0004167">
+<sequence>CCCGACCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr3" name="chr3">
+<matched-element start="97461979" stop="97461986" pvalue="7.4928e-06">
+<sequence>CCCCACCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr3" name="chr3">
+<matched-element start="97461991" stop="97461998" pvalue="2.3088e-05">
+<sequence>CCCCGCCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="MCRCCCA" name="MCRCCCA">
+<scanned-sequence accession="chr3" name="chr3">
+<matched-element start="97462017" stop="97462023" pvalue="0.00030665">
+<sequence>GCACCCA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CAGMCAC" name="CAGMCAC">
+<scanned-sequence accession="chr3" name="chr3">
+<matched-element start="97462047" stop="97462041" pvalue="0.00042336">
+<sequence>GTGGCTA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCTKCCY" name="CCTKCCY">
+<scanned-sequence accession="chr3" name="chr3">
+<matched-element start="97462057" stop="97462051" pvalue="8.7663e-05">
+<sequence>AGGCAGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CTGGRGA" name="CTGGRGA">
+<scanned-sequence accession="chr3" name="chr3">
+<matched-element start="97462067" stop="97462073" pvalue="0.00034728">
+<sequence>CTGAGGA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr3" name="chr3">
+<matched-element start="97462083" stop="97462076" pvalue="3.4905e-05">
+<sequence>GGGCGGGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="AGGGCGK" name="AGGGCGK">
+<scanned-sequence accession="chr3" name="chr3">
+<matched-element start="97462095" stop="97462101" pvalue="0.00020358">
+<sequence>GGGGCGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr3" name="chr3">
+<matched-element start="97462124" stop="97462117" pvalue="3.4905e-05">
+<sequence>GGGCGGGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<mem:match cluster-id="cluster-147" seq-name="chr3" start="97461943" stop="97462124" evalue="4.0358" qvalue="0.65026">TGGGCGGACAGTTCACAGCCCTAATCCCGACCCGGACCCCACCCTCGGCCCCGCCCCAAGCCGGAGCTGCGCACGCACCCACCACAGAGGCGGTGCTGGTGGCTAGAGAGGCAGGCGACCCAGGCTGAGGAGGGGGCGGGGCTGGAGCGCAGGGGGCGGAACAAGAGGCTCGGTGGGCGGGG
+</mem:match>
+</multi-pattern-scan>
+<multi-pattern-scan score="15.1771" pvalue="0.004731">
+<pattern accession="CACAGY" name="CACAGY">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="74937914" stop="74937919" pvalue="0.00019887">
+<sequence>CACAGC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="74937926" stop="74937933" pvalue="7.4928e-06">
+<sequence>CCCCACCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CACAGY" name="CACAGY">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="74937967" stop="74937962" pvalue="0.00019023">
+<sequence>GCTGTG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="74937977" stop="74937984" pvalue="3.0813e-05">
+<sequence>CCACGCCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="74938007" stop="74938001" pvalue="0.00017203">
+<sequence>TGATAAG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="MCRCCCA" name="MCRCCCA">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="74938017" stop="74938011" pvalue="4.4885e-05">
+<sequence>TGGGTGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CAGMCAC" name="CAGMCAC">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="74938039" stop="74938045" pvalue="0.00022509">
+<sequence>CAGTCAC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CAGMCAC" name="CAGMCAC">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="74938081" stop="74938075" pvalue="4.354e-05">
+<sequence>GTGGCTG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<mem:match cluster-id="cluster-485" seq-name="chr8" start="74937914" stop="74938081" evalue="4.9202" qvalue="0.67951">CACAGCACCCAGCCCCACCCAGGGTTTCATGACTCCTCTGACAGCTCTGCTGTGAACATGCAGCCACGCCCTGGGATGCAGAATGAATGATAAGGCATGGGTGGGAGAGGTAATATGTCAGGGATCAGTCACTCTACCCAGGAATTCCCAAGCCAGGAACAGTGGCTG
+</mem:match>
+</multi-pattern-scan>
+<multi-pattern-scan score="20.4207" pvalue="0.0066121">
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr16" name="chr16">
+<matched-element start="8687060" stop="8687067" pvalue="7.4928e-06">
+<sequence>CCCCACCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr16" name="chr16">
+<matched-element start="8687079" stop="8687085" pvalue="0.00014571">
+<sequence>CTTATCA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr16" name="chr16">
+<matched-element start="8687108" stop="8687101" pvalue="1.0273e-05">
+<sequence>GGGTGTGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CACAGY" name="CACAGY">
+<scanned-sequence accession="chr16" name="chr16">
+<matched-element start="8687123" stop="8687118" pvalue="0.00019023">
+<sequence>GCTGTG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CAGMCAC" name="CAGMCAC">
+<scanned-sequence accession="chr16" name="chr16">
+<matched-element start="8687131" stop="8687137" pvalue="4.4154e-05">
+<sequence>CAGCCAC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr16" name="chr16">
+<matched-element start="8687156" stop="8687163" pvalue="0.00021352">
+<sequence>CCACTCCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCTKCCY" name="CCTKCCY">
+<scanned-sequence accession="chr16" name="chr16">
+<matched-element start="8687181" stop="8687187" pvalue="3.3007e-05">
+<sequence>CCTGCCC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="AGGGCGK" name="AGGGCGK">
+<scanned-sequence accession="chr16" name="chr16">
+<matched-element start="8687214" stop="8687208" pvalue="0.00037569">
+<sequence>CTGCCCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CTGGRGA" name="CTGGRGA">
+<scanned-sequence accession="chr16" name="chr16">
+<matched-element start="8687224" stop="8687230" pvalue="4.5893e-05">
+<sequence>CTGGGGA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<mem:match cluster-id="cluster-896" seq-name="chr16" start="8687060" stop="8687230" evalue="6.8766" qvalue="0.71139">CCCCACCCTCTGTGACAGCCTTATCACTGGAGTGGACAGGTGGGTGTGGCGTGCCATGGCTGTGCTATCAGCAGCCACCATGGCAGGCCTCTGTGCCCACTCCCAGCCTACTGCTGCCAGCCCTGCCCAGCAGGTCCACCTTGGAAATCTGCCCTGCAGCTGGTCTGGGGA
+</mem:match>
+</multi-pattern-scan>
+<multi-pattern-scan score="19.9923" pvalue="0.0071294">
+<pattern accession="CTGTSTS" name="CTGTSTS">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="122895780" stop="122895786" pvalue="0.00014804">
+<sequence>CTGTCTC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="122895794" stop="122895788" pvalue="0.00028071">
+<sequence>AGATAAA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="122895814" stop="122895807" pvalue="1.9068e-05">
+<sequence>GGGTGGGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="122895830" stop="122895836" pvalue="0.00014571">
+<sequence>CTTATCA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CTGTSTS" name="CTGTSTS">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="122895840" stop="122895846" pvalue="4.9332e-05">
+<sequence>CTGTCTG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="122895877" stop="122895883" pvalue="7.0938e-05">
+<sequence>CTTATCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CTGGRGA" name="CTGGRGA">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="122895893" stop="122895887" pvalue="4.1891e-05">
+<sequence>TCCCCAG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCTKCCY" name="CCTKCCY">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="122895895" stop="122895901" pvalue="0.00015772">
+<sequence>CCTTCCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CACAGY" name="CACAGY">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="122895907" stop="122895912" pvalue="0.00019887">
+<sequence>CACAGC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCTKCCY" name="CCTKCCY">
+<scanned-sequence accession="chr8" name="chr8">
+<matched-element start="122895933" stop="122895927" pvalue="3.9291e-05">
+<sequence>GGGCAGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<mem:match cluster-id="cluster-511" seq-name="chr8" start="122895780" stop="122895933" evalue="7.4145" qvalue="0.71139">CTGTCTCCAGATAAACCCTGAGGCCTGGGGTGGGGCCATGCTGCTCACGGCTTATCACTTCTGTCTGGTGCTTGTTCCCGCCACTCTGCACCCCAGCCTTATCTGTGTCCCCAGGCCTTCCTTTGCCCACAGCTCTGACTGCTATGGGGGCAGG
+</mem:match>
+</multi-pattern-scan>
+<multi-pattern-scan score="18.4525" pvalue="0.0072315">
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65203455" stop="65203448" pvalue="1.0273e-05">
+<sequence>GGGTGTGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65203463" stop="65203469" pvalue="7.0938e-05">
+<sequence>CTTATCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CTGTSTS" name="CTGTSTS">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65203481" stop="65203487" pvalue="0.00031751">
+<sequence>CTGTTTG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="AGGGCGK" name="AGGGCGK">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65203506" stop="65203500" pvalue="0.00011464">
+<sequence>TCGCCCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65203528" stop="65203521" pvalue="0.00019512">
+<sequence>GGGTGGAG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="MCRCCCA" name="MCRCCCA">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65203539" stop="65203533" pvalue="4.4885e-05">
+<sequence>TGGGTGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="AKAAAM" name="AKAAAM">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65203544" stop="65203549" pvalue="0.00040654">
+<sequence>AGAAAA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="MCRCCCA" name="MCRCCCA">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65203563" stop="65203557" pvalue="4.4885e-05">
+<sequence>TGGGTGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="AGGGCGK" name="AGGGCGK">
+<scanned-sequence accession="chr5" name="chr5">
+<matched-element start="65203582" stop="65203588" pvalue="3.9291e-05">
+<sequence>AGGGCGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<mem:match cluster-id="cluster-275" seq-name="chr5" start="65203448" stop="65203588" evalue="7.5207" qvalue="0.71139">GGGTGTGGGCAGAATCTTATCTGAAGCTATGTCCTGTTTGGACAAGTTGGACTCGCCCTGGCAACTCTCCATGGGGTGGAGCCGATGGGTGGAGGCAGAAAAGTAAAATTGGGTGGCTTGTTCACGGAGAGGGGAGGGCGG
+</mem:match>
+</multi-pattern-scan>
+<multi-pattern-scan score="18.9397" pvalue="0.0077832">
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr4" name="chr4">
+<matched-element start="118241415" stop="118241408" pvalue="1.9068e-05">
+<sequence>GGGTGGGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CAGMCAC" name="CAGMCAC">
+<scanned-sequence accession="chr4" name="chr4">
+<matched-element start="118241451" stop="118241445" pvalue="9.4395e-05">
+<sequence>GTGTCTG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr4" name="chr4">
+<matched-element start="118241477" stop="118241470" pvalue="1.0273e-05">
+<sequence>GGGTGTGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr4" name="chr4">
+<matched-element start="118241518" stop="118241511" pvalue="1.0273e-05">
+<sequence>GGGTGTGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr4" name="chr4">
+<matched-element start="118241541" stop="118241535" pvalue="8.8278e-05">
+<sequence>AGATAAG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCTKCCY" name="CCTKCCY">
+<scanned-sequence accession="chr4" name="chr4">
+<matched-element start="118241579" stop="118241573" pvalue="8.7663e-05">
+<sequence>AGGCAGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CAGMCAC" name="CAGMCAC">
+<scanned-sequence accession="chr4" name="chr4">
+<matched-element start="118241591" stop="118241597" pvalue="0.00010019">
+<sequence>CAGACAC</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCMCRCCC" name="CCMCRCCC">
+<scanned-sequence accession="chr4" name="chr4">
+<matched-element start="118241642" stop="118241635" pvalue="1.9068e-05">
+<sequence>GGGTGGGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<mem:match cluster-id="cluster-195" seq-name="chr4" start="118241408" stop="118241642" evalue="8.0945" qvalue="0.71139">GGGTGGGGGCGGCAGGAATGGGGCCAGGCCCTCTGAAGTGTCTGCTGAGGATCCTGGGACCTGGGTGTGGGAGCTCATTAAGCACTATCTTTGCCAACACTGTGGGTGTGGTTCAATCTGGACCAAGAGATAAGGGTACGACCTGAGGCACCAGAAAGGAAGACGAGGCAGGTGGAGACTGGCCAGACACGTCCCAGGAGGAGGGAAGAATAAAAGGCAGCAAAGCTGGGTGGGG
+</mem:match>
+</multi-pattern-scan>
+<multi-pattern-scan score="11.0457" pvalue="0.0086296">
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr4" name="chr4">
+<matched-element start="134537975" stop="134537981" pvalue="7.0938e-05">
+<sequence>CTTATCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CCTKCCY" name="CCTKCCY">
+<scanned-sequence accession="chr4" name="chr4">
+<matched-element start="134538000" stop="134537994" pvalue="3.9291e-05">
+<sequence>GGGCAGG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="BTTATCW" name="BTTATCW">
+<scanned-sequence accession="chr4" name="chr4">
+<matched-element start="134538017" stop="134538023" pvalue="0.00023112">
+<sequence>TTTATCT</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="MCRCCCA" name="MCRCCCA">
+<scanned-sequence accession="chr4" name="chr4">
+<matched-element start="134538035" stop="134538041" pvalue="4.2831e-05">
+<sequence>CCACCCA</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<pattern accession="CATYTCC" name="CATYTCC">
+<scanned-sequence accession="chr4" name="chr4">
+<matched-element start="134538058" stop="134538052" pvalue="5.8244e-05">
+<sequence>GGAGATG</sequence>
+</matched-element>
+</scanned-sequence>
+</pattern>
+<mem:match cluster-id="cluster-220" seq-name="chr4" start="134537975" stop="134538058" evalue="8.9748" qvalue="0.72302">CTTATCTCCTCTCTGCAGCGGGCAGGCCAAGCCTCCTGGCAGTTTATCTGTCTACACTAACCACCCACAGGCCTTTGGGAGATG
+</mem:match>
+</multi-pattern-scan>
+</cis-element-search>

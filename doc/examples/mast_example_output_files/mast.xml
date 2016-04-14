@@ -1,0 +1,600 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<mast version="4.11.0" release="Wed Mar 25 11:40:43 2015 +1000">
+	<command_line><arg>mast</arg><arg>-oc</arg><arg>mast_example_output_files</arg><arg>adh.meme</arg><arg>adh.faa</arg></command_line>
+	<settings strand_handling="unstranded" max_correlation="0.60" remove_correlated="n" max_seq_evalue="10" adjust_hit="n" max_hit_pvalue="0.0001" max_weak_pvalue="0.0001"/>
+	<alphabet name="Protein" like="protein">
+		<letter id="A" symbol="A" name="Alanine" colour="0000CC"/>
+		<letter id="C" symbol="C" name="Cysteine" colour="0000CC"/>
+		<letter id="D" symbol="D" name="Aspartic acid" colour="FF00FF"/>
+		<letter id="E" symbol="E" name="Glutamic acid" colour="FF00FF"/>
+		<letter id="F" symbol="F" name="Phenylalanine" colour="0000CC"/>
+		<letter id="G" symbol="G" name="Glycine" colour="FFB300"/>
+		<letter id="H" symbol="H" name="Histidine" colour="FFCCCC"/>
+		<letter id="I" symbol="I" name="Isoleucine" colour="0000CC"/>
+		<letter id="K" symbol="K" name="Lysine" colour="CC0000"/>
+		<letter id="L" symbol="L" name="Leucine" colour="0000CC"/>
+		<letter id="M" symbol="M" name="Methionine" colour="0000CC"/>
+		<letter id="N" symbol="N" name="Asparagine" colour="008000"/>
+		<letter id="P" symbol="P" name="Proline" colour="FFFF00"/>
+		<letter id="Q" symbol="Q" name="Glutamine" colour="008000"/>
+		<letter id="R" symbol="R" name="Arginine" colour="CC0000"/>
+		<letter id="S" symbol="S" name="Serine" colour="008000"/>
+		<letter id="T" symbol="T" name="Threonine" colour="008000"/>
+		<letter id="V" symbol="V" name="Valine" colour="0000CC"/>
+		<letter id="W" symbol="W" name="Tryptophan" colour="0000CC"/>
+		<letter id="Y" symbol="Y" name="Tyrosine" colour="33E6CC"/>
+		<letter id="X" symbol="X" aliases="*." equals="ACDEFGHIKLMNPQRSTVWY" name="Any amino acid"/>
+		<letter id="B" symbol="B" equals="DN" name="Asparagine or Aspartic acid"/>
+		<letter id="Z" symbol="Z" equals="EQ" name="Glutamine or Glutamic acid"/>
+		<letter id="J" symbol="J" equals="IL" name="Leucine or Isoleucine"/>
+	</alphabet>
+	<background from="preset" A="0.0730919" C="0.0181455" D="0.051688" E="0.0622785" F="0.0402434" G="0.0692596" H="0.0224055" I="0.056227" K="0.058435" L="0.0916218" M="0.0230443" N="0.0460321" P="0.0506238" Q="0.0407153" R="0.0518462" S="0.073729" T="0.0593523" V="0.0642985" W="0.0133282" Y="0.0326497"/>
+	<motif_dbs>
+		<motif_db source="adh.meme" last_mod_date="Wed Mar 18 09:25:16 2015">
+			<background A="0.110889" C="0.011988" D="0.04995" E="0.0549451" F="0.035964" G="0.0899101" H="0.017982" I="0.0569431" K="0.0519481" L="0.0919081" M="0.026973" N="0.040959" P="0.040959" Q="0.028971" R="0.048951" S="0.0639361" T="0.0569431" V="0.0829171" W="0.00999001" Y="0.026973"/>
+		</motif_db>
+	</motif_dbs>
+	<motifs>
+		<motif db="0" id="1" alt="MEME" length="21" nsites="31" evalue="7.1e-135">
+			<pos A="-262" C="-312" D="83" E="-131" F="-350" G="203" H="82" I="-90" K="52" L="-342" M="-275" N="114" P="-39" Q="119" R="-30" S="12" T="-204" V="-133" W="-326" Y="-273"/>
+			<pos A="-140" C="-325" D="-219" E="-27" F="-366" G="-145" H="81" I="-367" K="333" L="-144" M="-287" N="-179" P="48" Q="166" R="-25" S="-195" T="-56" V="-361" W="-336" Y="-287"/>
+			<pos A="10" C="120" D="-276" E="-204" F="-292" G="-394" H="74" I="-223" K="39" L="-273" M="-226" N="146" P="-332" Q="-148" R="34" S="-230" T="17" V="225" W="149" Y="-275"/>
+			<pos A="182" C="-323" D="-682" E="-626" F="-410" G="-667" H="-559" I="129" K="-605" L="-328" M="26" N="-585" P="-608" Q="-558" R="-620" S="-535" T="-77" V="220" W="-518" Y="-485"/>
+			<pos A="-172" C="-283" D="-590" E="-510" F="-8" G="-568" H="-398" I="188" K="-481" L="247" M="-176" N="-478" P="-489" Q="-396" R="-467" S="-426" T="-349" V="88" W="158" Y="-344"/>
+			<pos A="-539" C="-367" D="-757" E="-719" F="-17" G="-781" H="-714" I="286" K="-711" L="-120" M="-348" N="-686" P="-694" Q="-672" R="-748" S="-670" T="-469" V="260" W="-614" Y="-574"/>
+			<pos A="-384" C="-246" D="-429" E="-457" F="-428" G="-528" H="-361" I="-102" K="-371" L="-454" M="-315" N="-253" P="-432" Q="-313" R="-386" S="-21" T="389" V="-145" W="-402" Y="-449"/>
+			<pos A="-193" C="-340" D="-331" E="-392" F="-498" G="336" H="-355" I="-517" K="-375" L="-560" M="-464" N="-287" P="-436" Q="-388" R="-379" S="-303" T="-417" V="-500" W="-391" Y="-443"/>
+			<pos A="201" C="237" D="-650" E="-643" F="-608" G="206" H="-569" I="-623" K="-659" L="-636" M="-561" N="-525" P="-486" Q="-524" R="-606" S="14" T="-368" V="-132" W="-584" Y="-629"/>
+			<pos A="130" C="-382" D="46" E="-315" F="-541" G="144" H="-279" I="-578" K="-331" L="-155" M="-518" N="82" P="-440" Q="-291" R="-402" S="195" T="-70" V="-545" W="-525" Y="-450"/>
+			<pos A="-69" C="115" D="-40" E="-134" F="-353" G="30" H="-146" I="-358" K="155" L="-344" M="-277" N="-166" P="-293" Q="119" R="153" S="211" T="-53" V="-350" W="-328" Y="-276"/>
+			<pos A="-200" C="-333" D="-312" E="-373" F="-108" G="325" H="-337" I="-501" K="-136" L="-545" M="-447" N="-268" P="-422" Q="-370" R="-132" S="-291" T="-157" V="-488" W="-373" Y="-426"/>
+			<pos A="-194" C="-333" D="-573" E="-550" F="-31" G="-633" H="-500" I="335" K="-514" L="145" M="-206" N="-508" P="-557" Q="-473" R="-542" S="-490" T="-391" V="7" W="-420" Y="-408"/>
+			<pos A="-336" C="-346" D="-335" E="-396" F="-502" G="336" H="-358" I="-522" K="-379" L="-564" M="-469" N="-291" P="-440" Q="-392" R="-383" S="-130" T="-422" V="-505" W="-395" Y="-447"/>
+			<pos A="-70" C="-261" D="-251" E="-180" F="121" G="-146" H="166" I="-66" K="213" L="89" M="-231" N="-206" P="-319" Q="-128" R="177" S="-64" T="-216" V="-272" W="-304" Y="17"/>
+			<pos A="241" C="97" D="-30" E="104" F="-77" G="-151" H="16" I="-322" K="-270" L="-332" M="-270" N="-273" P="-398" Q="-240" R="-304" S="34" T="-234" V="-223" W="-320" Y="-344"/>
+			<pos A="-71" C="133" D="-488" E="-410" F="-221" G="-452" H="-294" I="190" K="-377" L="80" M="122" N="-366" P="-399" Q="6" R="-372" S="-306" T="202" V="-7" W="-261" Y="168"/>
+			<pos A="260" C="189" D="-432" E="-387" F="-365" G="-148" H="-367" I="-352" K="-389" L="-366" M="-304" N="-382" P="-447" Q="-351" R="-391" S="1" T="-263" V="69" W="-352" Y="-402"/>
+			<pos A="-269" C="-288" D="-45" E="81" F="-28" G="-363" H="81" I="96" K="243" L="31" M="-254" N="-181" P="-301" Q="-101" R="153" S="-192" T="-209" V="-123" W="-316" Y="15"/>
+			<pos A="63" C="-305" D="34" E="83" F="-342" G="-61" H="219" I="-87" K="-116" L="-10" M="-267" N="-166" P="-291" Q="50" R="124" S="-180" T="20" V="-49" W="147" Y="13"/>
+			<pos A="-192" C="98" D="-521" E="-438" F="235" G="-528" H="-339" I="-49" K="-412" L="274" M="-117" N="-426" P="-421" Q="-24" R="-390" S="-382" T="-316" V="-230" W="-292" Y="-9"/>
+		</motif>
+		<motif db="0" id="2" alt="MEME" length="29" nsites="31" evalue="2.9e-168">
+			<pos A="82" C="-267" D="-51" E="-166" F="-316" G="-147" H="-170" I="-77" K="-147" L="-304" M="-247" N="-16" P="100" Q="-117" R="-205" S="204" T="136" V="-44" W="-313" Y="12"/>
+			<pos A="106" C="-217" D="-312" E="-241" F="-257" G="-8" H="74" I="-47" K="-220" L="-106" M="30" N="56" P="104" Q="-183" R="-52" S="52" T="-55" V="109" W="-282" Y="-259"/>
+			<pos A="-735" C="-508" D="-715" E="-725" F="-189" G="-735" H="-324" I="-566" K="-670" L="-508" M="22" N="-574" P="-668" Q="-545" R="-619" S="-626" T="-645" V="-620" W="-234" Y="512"/>
+			<pos A="-12" C="287" D="-539" E="-525" F="-527" G="100" H="-469" I="-528" K="-499" L="-549" M="-480" N="-414" P="-40" Q="-435" R="-69" S="273" T="80" V="-136" W="-513" Y="-524"/>
+			<pos A="261" C="-60" D="-386" E="-339" F="-316" G="-156" H="-322" I="-140" K="-339" L="-189" M="30" N="-344" P="-432" Q="-309" R="-345" S="71" T="-113" V="-119" W="-305" Y="-354"/>
+			<pos A="74" C="-256" D="-555" E="-578" F="-543" G="-416" H="-494" I="-568" K="-537" L="-583" M="-505" N="-406" P="-453" Q="-469" R="-517" S="331" T="147" V="-495" W="-522" Y="-540"/>
+			<pos A="-572" C="-446" D="-600" E="-565" F="-643" G="-626" H="-470" I="-557" K="423" L="-622" M="-560" N="-486" P="-552" Q="-478" R="-203" S="-565" T="-529" V="-649" W="-497" Y="-576"/>
+			<pos A="204" C="-240" D="-536" E="-479" F="272" G="41" H="-340" I="-59" K="-449" L="-310" M="-275" N="-426" P="-459" Q="7" R="-446" S="-310" T="-315" V="-287" W="261" Y="-219"/>
+			<pos A="244" C="-260" D="-617" E="-607" F="76" G="146" H="-544" I="-586" K="-620" L="-599" M="-528" N="-507" P="-484" Q="-506" R="-581" S="13" T="-360" V="-465" W="-556" Y="-597"/>
+			<pos A="-72" C="-187" D="-492" E="-414" F="-225" G="-153" H="-299" I="86" K="-381" L="139" M="173" N="-370" P="-403" Q="-317" R="-377" S="-87" T="-243" V="220" W="-266" Y="-256"/>
+			<pos A="-68" C="114" D="34" E="117" F="-347" G="-350" H="-143" I="53" K="53" L="-62" M="-272" N="-7" P="-288" Q="51" R="124" S="58" T="68" V="2" W="-324" Y="-271"/>
+			<pos A="40" C="-276" D="-47" E="-161" F="-314" G="184" H="166" I="-284" K="-143" L="-130" M="199" N="63" P="-308" Q="-113" R="-201" S="9" T="-54" V="-118" W="-311" Y="-270"/>
+			<pos A="-199" C="-336" D="-604" E="-519" F="249" G="-629" H="-422" I="-198" K="-495" L="285" M="35" N="-68" P="-491" Q="-386" R="-464" S="-490" T="-415" V="-298" W="-347" Y="-363"/>
+			<pos A="-82" C="123" D="-470" E="-437" F="-23" G="-472" H="-328" I="-211" K="-385" L="-272" M="161" N="-319" P="-417" Q="-322" R="-388" S="163" T="270" V="104" W="-315" Y="-316"/>
+			<pos A="-294" C="-341" D="-45" E="189" F="-384" G="-381" H="168" I="-382" K="159" L="-145" M="-302" N="-194" P="-320" Q="119" R="250" S="56" T="-234" V="-376" W="-351" Y="-303"/>
+			<pos A="65" C="125" D="-331" E="15" F="-254" G="-64" H="-231" I="-46" K="-239" L="-106" M="-192" N="-31" P="-353" Q="-201" R="-279" S="218" T="108" V="-23" W="-280" Y="18"/>
+			<pos A="10" C="-189" D="-490" E="-411" F="-219" G="-458" H="66" I="-27" K="-379" L="220" M="284" N="-370" P="-399" Q="-311" R="-372" S="-312" T="-62" V="-73" W="155" Y="20"/>
+			<pos A="227" C="-245" D="-435" E="-371" F="-483" G="-54" H="-343" I="-468" K="-259" L="-471" M="12" N="-364" P="-445" Q="158" R="203" S="-69" T="-323" V="-393" W="-450" Y="-456"/>
+			<pos A="-276" C="-250" D="-256" E="-41" F="67" G="-380" H="78" I="-62" K="41" L="90" M="163" N="-19" P="-320" Q="161" R="152" S="-214" T="-54" V="51" W="-297" Y="17"/>
+			<pos A="-155" C="-448" D="205" E="312" F="-480" G="-150" H="-254" I="-458" K="-38" L="-63" M="-382" N="-264" P="-367" Q="39" R="-291" S="-81" T="-72" V="-440" W="-453" Y="-396"/>
+			<pos A="-150" C="129" D="-489" E="-411" F="-219" G="-157" H="-297" I="37" K="-378" L="228" M="119" N="-370" P="-399" Q="-311" R="-372" S="-91" T="-245" V="31" W="-263" Y="234"/>
+			<pos A="158" C="-294" D="-205" E="-23" F="-345" G="28" H="-147" I="-90" K="51" L="-142" M="-270" N="-168" P="-40" Q="-88" R="151" S="57" T="-204" V="-335" W="-323" Y="12"/>
+			<pos A="-135" C="-311" D="-204" E="83" F="-349" G="-62" H="-146" I="-90" K="154" L="-143" M="-274" N="-167" P="285" Q="118" R="40" S="-181" T="19" V="-133" W="-326" Y="-275"/>
+			<pos A="-261" C="-309" D="-40" E="83" F="-29" G="-351" H="257" I="-352" K="127" L="-11" M="-272" N="-8" P="-39" Q="119" R="-30" S="12" T="20" V="-344" W="147" Y="230"/>
+			<pos A="-348" C="-374" D="-257" E="-61" F="-453" G="255" H="-223" I="-454" K="-30" L="-444" M="-379" N="200" P="-382" Q="21" R="83" S="-82" T="-303" V="-151" W="-397" Y="-366"/>
+			<pos A="-366" C="-246" D="-411" E="-397" F="-111" G="-492" H="-359" I="345" K="-183" L="-76" M="-102" N="-352" P="-425" Q="-334" R="-188" S="-338" T="-159" V="126" W="-308" Y="-95"/>
+			<pos A="-137" C="-283" D="-223" E="-153" F="-321" G="-61" H="80" I="-77" K="92" L="-132" M="-250" N="64" P="-303" Q="-104" R="271" S="-194" T="105" V="8" W="-313" Y="15"/>
+			<pos A="-143" C="25" D="-191" E="-327" F="-282" G="-441" H="-262" I="61" K="-335" L="-174" M="-225" N="-166" P="-317" Q="-307" R="-309" S="-195" T="-110" V="311" W="-341" Y="-386"/>
+			<pos A="-135" C="-312" D="-200" E="-131" F="-349" G="-61" H="82" I="-353" K="-7" L="-340" M="-273" N="309" P="-289" Q="51" R="41" S="120" T="20" V="-50" W="-325" Y="13"/>
+		</motif>
+	</motifs>
+	<correlations>
+		<correlation idx_a="0" idx_b="1" value="0.30"/>
+	</correlations>
+	<sequence_dbs>
+		<sequence_db source="adh.faa" last_mod_date="Wed Mar 18 09:18:40 2015" seq_count="33" residue_count="9996"/>
+	</sequence_dbs>
+	<sequences>
+		<sequence db="0" name="BUDC_KLETE" comment="ACETOIN(DIACETYL) REDUCTASE (EC 1.1.1.5) (ACETOIN DEHYDROGENASE)" length="241">
+			<score strand="both" combined_pvalue="3.95e-34" evalue="1.3e-32"/>
+			<seg start="1">
+				<data>
+MQKVALVTGAGQGIGKAIALRLVKDGFAVAIADYNDATATAVAAEINQAGGRAVAIKVDVSRRDQVFAAVEQARK
+				</data>
+				<hit pos="2" idx="0" pvalue="8.9e-19" match="+++++++++++++++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+ALGGFNVIVNNAGIAPSTPIESITEEIVDRVYNINVKGVIWGMQAAVEAFKKEGHGGKIVNACSQAGHVGNPELA
+VYSSSKFAVRGLTQTAARDLAPLGITVNGFCPGIVKTPMWAEIDRQCRKRRANRWATARLNLPNASPLAACRSLK
+				</data>
+				<hit pos="150" idx="1" pvalue="1.1e-22" match="+++++++++++++++++++++++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="YRTP_BACSU" comment="HYPOTHETICAL 25.3 KD PROTEIN IN RTP 5'REGION (ORF238)" length="238">
+			<score strand="both" combined_pvalue="4.17e-34" evalue="1.4e-32"/>
+			<seg start="1">
+				<data>
+MQSLQHKTALITGGGRGIGRATALALAKEGVNIGLIGRTSANVEKVAEEVKALGVKAAFAAADVKDADQVNQAVA
+				</data>
+				<hit pos="6" idx="0" pvalue="2.8e-17" match="+++++++++++++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+VTSAYSASKFAVLGLTESLMQEVRKHNIRVSALTPSTVASDMSIELNLTDGNPEKVMQPEDLAEYMVAQLKLDPR
+				</data>
+				<hit pos="153" idx="1" pvalue="4.0e-24" match="++++++++++ ++++++++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="FIXR_BRAJA" comment="FIXR PROTEIN" length="278">
+			<score strand="both" combined_pvalue="1.05e-29" evalue="3.5e-28"/>
+			<seg start="1">
+				<data>
+MGLDLPNDNLIRGPLPEAHLDRLVDAVNARVDRGEPKVMLLTGASRGIGHATAKLFSEAGWRIISCARQPFDGER
+				</data>
+				<hit pos="36" idx="0" pvalue="8.4e-16" match=" ++++ +++++++++++++ +"/>
+			</seg>
+			<seg start="151">
+				<data>
+APILLAQGLFDELRAASGSIVNVTSIAGSRVHPFAGSAYATSKAALASLTRELAHDYAPHGIRVNAIAPGEIRTD
+				</data>
+				<hit pos="187" idx="1" pvalue="2.7e-21" match="+++  +++++ ++++++++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="AP27_MOUSE" comment="ADIPOCYTE P27 PROTEIN (AP27)" length="244">
+			<score strand="both" combined_pvalue="3.19e-28" evalue="1.1e-26"/>
+			<seg start="1">
+				<data>
+MKLNFSGLRALVTGAGKGIGRDTVKALHASGAKVVAVTRTNSDLVSLAKECPGIEPVCVDLGDWDATEKALGGIG
+				</data>
+				<hit pos="7" idx="0" pvalue="9.5e-15" match="+ +++++++++++++ +++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+PVDLLVNNAALVIMQPFLEVTKEAFDRSFSVNLRSVFQVSQMVARDMINRGVPGSIVNVSSMVAHVTFPNLITYS
+STKGAMTMLTKAMAMELGPHKIRVNSVNPTVVLTDMGKKVSADPEFARKLKERHPLRKFAEVEDVVNSILFLLSD
+				</data>
+				<hit pos="147" idx="1" pvalue="1.0e-20" match="  ++++++++++++++++++++++ ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="HDHA_ECOLI" comment="7-ALPHA-HYDROXYSTEROID DEHYDROGENASE (EC 1.1.1.159) (HSDH)" length="255">
+			<score strand="both" combined_pvalue="4.97e-28" evalue="1.6e-26"/>
+			<seg start="1">
+				<data>
+MFNSDNLRLDGKCAIITGAGAGIGKEIAITFATAGASVVVSDINADAANHVVDEIQQLGGQAFACRCDITSEQEL
+				</data>
+				<hit pos="11" idx="0" pvalue="1.9e-16" match="++++++++++ ++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+NKNINMTSYASSKAAASHLVRNMAFDLGEKNIRVNGIAPGAILTDALKSVITPEIEQKMLQHTPIRRLGQPQDIA
+				</data>
+				<hit pos="157" idx="1" pvalue="7.3e-19" match="+++ +++++ +++++ +++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="DHGB_BACME" comment="GLUCOSE 1-DEHYDROGENASE B (EC 1.1.1.47)" length="262">
+			<score strand="both" combined_pvalue="1.44e-27" evalue="4.8e-26"/>
+			<seg start="1">
+				<data>
+MYKDLEGKVVVITGSSTGLGKSMAIRFATEKAKVVVNYRSKEDEANSVLEEEIKKVGGEAIAVKGDVTVESDVIN
+				</data>
+				<hit pos="7" idx="0" pvalue="3.4e-15" match="++++++++++ ++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+KIPWPLFVHYAASKGGMKLMTETLALEYAPKGIRVNNIGPGAINTPINAEKFADPEQRADVESMIPMGYIGEPEE
+				</data>
+				<hit pos="158" idx="1" pvalue="1.1e-19" match=" ++ +++++++ +++++++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="HDE_CANTR" comment="HYDRATASE-DEHYDROGENASE-EPIMERASE (HDE)" length="906">
+			<score strand="both" combined_pvalue="7.01e-27" evalue="2.3e-25"/>
+			<seg start="1">
+				<data>
+MSPVDFKDKVVIITGAGGGLGKYYSLEFAKLGAKVVVNDLGGALNGQGGNSKAADVVVDEIVKNGGVAVADYNNV
+				</data>
+				<hit pos="8" idx="0" pvalue="1.9e-13" match="+++++++++++++++ +++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+PAGLYGNFGQANYASAKSALLGFAETLAKEGAKYNIKANAIAPLARSRMTESILPPPMLEKLGPEKVAPLVLYLS
+				</data>
+				<hit pos="161" idx="1" pvalue="9.7e-14" match="+++ +++ ++ ++ ++++++ ++++++ +"/>
+			</seg>
+			<seg start="301">
+				<data>
+TNEARKLPANDASGAPTVSLKDKVVLITGAGAGLGKEYAKWFAKYGAKVVVNDFKDATKTVDEIKAAGGEAWPDQ
+				</data>
+				<hit pos="322" idx="0" pvalue="3.2e-17" match="++++++++++ ++++++++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+NITSTSGIYGNFGQANYSSSKAGILGLSKTMAIEGAKNNIKVNIVAPHAETAMTLTIFREQDKNLYHADQVAPLL
+				</data>
+				<hit pos="465" idx="1" pvalue="4.3e-18" match="++++++++++ +++++++ + ++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="DHII_HUMAN" comment="CORTICOSTEROID 11-BETA-DEHYDROGENASE (EC 1.1.1.146) (11-DH) (11-BETA- HYDROXYSTEROID DEHYDROGENASE) (11-BETA-HSD)" length="292">
+			<score strand="both" combined_pvalue="7.06e-27" evalue="2.3e-25"/>
+			<seg start="1">
+				<data>
+MAFMKKYLLPILGLFMAYYYYSANEEFRPEMLQGKKVIVTGASKGIGREMAYHLAKMGAHVVVTARSKETLQKVV
+				</data>
+				<hit pos="34" idx="0" pvalue="1.1e-17" match="+++++++++++++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+TVAALPMLKQSNGSIVVVSSLAGKVAYPMVAAYSASKFALDGFFSSIRKEYSVSRVNVSITLCVLGLIDTETAMK
+				</data>
+				<hit pos="181" idx="1" pvalue="1.4e-16" match="+++++++++++++ ++ +++++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="NODG_RHIME" comment="NODULATION PROTEIN G (HOST-SPECIFICITY OF NODULATION PROTEIN C)" length="245">
+			<score strand="both" combined_pvalue="8.16e-27" evalue="2.7e-25"/>
+			<seg start="1">
+				<data>
+MFELTGRKALVTGASGAIGGAIARVLHAQGAIVGLHGTQIEKLETLATELGDRVKLFPANLANRDEVKALGQRAE
+				</data>
+				<hit pos="6" idx="0" pvalue="7.3e-13" match="+ +++++++++ ++ ++++ +"/>
+			</seg>
+			<seg start="76">
+				<data>
+ADLEGVDILVNNAGITKDGLFLHMADPDWDIVLEVNLTAMFRLTREITQQMIRRRNGRIINVTSVAGAIGNPGQT
+NYCASKAGMIGFSKSLAQEIATRNITVNCVAPGFIESAMTDKLNHKQKEKIMVAIPIHRMGTGTEVASAVAYLAS
+				</data>
+				<hit pos="150" idx="1" pvalue="3.5e-21" match="+++++++++++++++++++++++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="YINL_LISMO" comment="HYPOTHETICAL 26.8 KD PROTEIN IN INLA 5'REGION (ORFA)" length="248">
+			<score strand="both" combined_pvalue="8.79e-27" evalue="2.9e-25"/>
+			<seg start="1">
+				<data>
+MTIKNKVIIITGASSGIGKATALLLAEKGAKLVLAARRVEKLEKIVQIIKANSGEAIFAKTDVTKREDNKKLVEL
+				</data>
+				<hit pos="5" idx="0" pvalue="2.4e-18" match="+++++++++++++++++++ +"/>
+			</seg>
+			<seg start="151">
+				<data>
+GAVYGATKWAVRDLMEVLRMESAQEGTNIRTATIYPAAINTELLETITDKETEQGMTSLYKQYGITPDRIASIVA
+				</data>
+				<hit pos="152" idx="1" pvalue="1.1e-15" match="+++++++++++ +++ ++++ ++++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="DHB2_HUMAN" comment="no comment" length="387">
+			<score strand="both" combined_pvalue="9.29e-27" evalue="3.1e-25"/>
+			<seg start="76">
+				<data>
+ELLPVDQKAVLVTGGDCGLGHALCKYLDELGFTVFAGVLNENGPGAEELRRTCSPRLSVLQMDITKPVQIKDAYS
+				</data>
+				<hit pos="82" idx="0" pvalue="5.4e-16" match="+++++++++++++++++++++"/>
+			</seg>
+			<seg start="226">
+				<data>
+MERLASYGSSKAAVTMFSSVMRLELSKWGIKVASIQPGGFLTNIAGTSDKWEKLEKDILDHLPAEVQEDYGQDYI
+				</data>
+				<hit pos="230" idx="1" pvalue="2.0e-18" match="+++++++++++++++ ++++++++++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="RIDH_KLEAE" comment="RIBITOL 2-DEHYDROGENASE (EC 1.1.1.56) (RDH)" length="249">
+			<score strand="both" combined_pvalue="2.65e-26" evalue="8.7e-25"/>
+			<seg start="1">
+				<data>
+MKHSVSSMNTSLSGKVAAITGAASGIGLECARTLLGAGAKVVLIDREGEKLNKLVAELGENAFALQVDLMQADQV
+				</data>
+				<hit pos="14" idx="0" pvalue="4.3e-16" match="++++ ++++++++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+VVPVIWEPVYTASKFAVQAFVHTTRRQVAQYGVRVGAVLPGPVVTALLDDWPKAKMDEALANGSLMQPIEVAESV
+				</data>
+				<hit pos="158" idx="1" pvalue="1.9e-17" match="++++++++++++++++ +++++++++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="DHMA_FLAS1" comment="N-ACYLMANNOSAMINE 1-DEHYDROGENASE (EC 1.1.1.233) (NAM-DH) " length="270">
+			<score strand="both" combined_pvalue="4.04e-26" evalue="1.3e-24"/>
+			<seg start="1">
+				<data>
+TTAGVSRRPGRLAGKAAIVTGAAGGIGRATVEAYLREGASVVAMDLAPRLAATRYEEPGAIPIACDLADRAAIDA
+				</data>
+				<hit pos="14" idx="0" pvalue="4.7e-15" match="++++++++++++++++++++ "/>
+			</seg>
+			<seg start="151">
+				<data>
+GSVNSFMAEPEAAAYVAAKGGVAMLTRAMAVDLARHGILVNMIAPGPVDVTGNNTGYSEPRLAEQVLDEVALGRP
+				</data>
+				<hit pos="163" idx="1" pvalue="2.2e-18" match="+++ ++++++ +++++++++++++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="FVT1_HUMAN" comment="no comment" length="332">
+			<score strand="both" combined_pvalue="6.24e-26" evalue="2.1e-24"/>
+			<seg start="1">
+				<data>
+MLLLAAAFLVAFVLLLYMVSPLISPKPLALPGAHVVVTGGSSGIGKCIAIECYKQGAFITLVARNEDKLLQAKKE
+				</data>
+				<hit pos="32" idx="0" pvalue="5.2e-15" match="+ +++++++++++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+YPSRAVITTMKERRVGRIVFVSSQAGQLGLFGFTAYSASKFAIRGLAEALQMEVKPYNVYITVAYPPDTDTPGFA
+				</data>
+				<hit pos="184" idx="1" pvalue="2.0e-18" match="+++++++++++++ +++++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="ENTA_ECOLI" comment="2,3-DIHYDRO-2,3-DIHYDROXYBENZOATE DEHYDROGENASE (EC 1.3.1.28)" length="248">
+			<score strand="both" combined_pvalue="2.02e-25" evalue="6.7e-24"/>
+			<seg start="1">
+				<data>
+MDFSGKNVWVTGAGKGIGYATALAFVEAGAKVTGFDQAFTQEQYPFATEVMDVADAAQVAQVCQRLLAETERLDA
+				</data>
+				<hit pos="5" idx="0" pvalue="3.6e-17" match="+++++++++++++++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+LVNAAGILRMGATDQLSKEDWQQTFAVNVGGAFNLFQQTMNQFRRQRGGAIVTVASDAAHTPRIGMSAYGASKAA
+LKSLALSVGLELAGSGVRCNVVSPGSTDTDMQRTLWVSDDAEEQRIRGFGEQFKLGIPLGKIARPQEIANTILFL
+				</data>
+				<hit pos="142" idx="1" pvalue="1.8e-15" match="+++++++++++++  +  ++++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="2BHD_STREX" comment="20-BETA-HYDROXYSTEROID DEHYDROGENASE (EC 1.1.1.53)" length="255">
+			<score strand="both" combined_pvalue="4.68e-25" evalue="1.5e-23"/>
+			<seg start="1">
+				<data>
+MNDLSGKTVIITGGARGLGAEAARQAVAAGARVVLADVLDEEGAATARELGDAARYQHLDVTIEEDWQRVVAYAR
+				</data>
+				<hit pos="6" idx="0" pvalue="4.4e-13" match="++++++++++++++ + +++ "/>
+				<hit pos="30" idx="0" pvalue="4.5e-05" match="+ +++        + ++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+EEFGSVDGLVNNAGISTGMFLETESVERFRKVVDINLTGVFIGMKTVIPAMKDAGGGSIVNISSAAGLMGLALTS
+SYGASKWGVRGLSKLAAVELGTDRIRVNSVHPGMTYTPMTAETGIRQGEGNYPNTPMGRVGNEPGEIAGAVVKLL
+				</data>
+				<hit pos="150" idx="1" pvalue="3.2e-19" match="+++++++++++++++ +++++++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="BDH_HUMAN" comment="D-BETA-HYDROXYBUTYRATE DEHYDROGENASE PRECURSOR (EC 1.1.1.30) (BDH) (3-HYDROXYBUTYRATE DEHYDROGENASE) (FRAGMENT)" length="343">
+			<score strand="both" combined_pvalue="7.26e-25" evalue="2.4e-23"/>
+			<seg start="1">
+				<data>
+GLRPPPPGRFSRLPGKTLSACDRENGARRPLLLGSTSFIPIGRRTYASAAEPVGSKAVLVTGCDSGFGFSLAKHL
+				</data>
+				<hit pos="55" idx="0" pvalue="1.8e-15" match="++++++++++++ ++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+GEVEFTSLETYKQVAEVNLWGTVRMTKSFLPLIRRAKGRVVNISSMLGRMANPARSPYCITKFGVEAFSDCLRYE
+MYPLGVKVSVVEPGNFIAATSLYNPESIQAIAKKMWEELPEVVRKDYGKKYFDEKIAKMETYCSSGSTDTSPVID
+				</data>
+				<hit pos="206" idx="1" pvalue="6.5e-17" match="++++ +++++++++ ++++++++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="HMTR_LEIMA" comment="no comment" length="287">
+			<score strand="both" combined_pvalue="1.33e-24" evalue="4.4e-23"/>
+			<seg start="1">
+				<data>
+MTAPTVPVALVTGAAKRLGRSIAEGLHAEGYAVCLHYHRSAAEANALSATLNARRPNSAITVQADLSNVATAPVS
+				</data>
+				<hit pos="6" idx="0" pvalue="1.4e-12" match=" ++++++++++ +++++++ +"/>
+			</seg>
+			<seg start="151">
+				<data>
+PYFLIKAFAHRSRHPSQASRTNYSIINMVDAMTNQPLLGYTIYTMAKGALEGLTRSAALELAPLQIRVNGVGPGL
+				</data>
+				<hit pos="191" idx="1" pvalue="2.3e-19" match="+ +++++++++++++++++++++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="DHES_HUMAN" comment="ESTRADIOL 17 BETA-DEHYDROGENASE (EC 1.1.1.62) (20 ALPHA-HYDROXYSTEROID DEHYDROGENASE) (E2DH) (17-BETA-HSD) (PLACENTAL 17-BETA-HYDROXYSTEROID DEHYDROGENASE)" length="327">
+			<score strand="both" combined_pvalue="5.97e-24" evalue="2e-22"/>
+			<seg start="1">
+				<data>
+ARTVVLITGCSSGIGLHLAVRLASDPSQSFKVYATLRDLKTQGRLWEAARALACPPGSLETLQLDVRDSKSVAAA
+				</data>
+				<hit pos="2" idx="0" pvalue="1.3e-14" match="  ++++++++++++++++ ++"/>
+			</seg>
+			<seg start="151">
+				<data>
+FNDVYCASKFALEGLCESLAVLLLPFGVHLSLIECGPVHTAFMEKVLGSPEEVLDRTDIHTFHRFYQYLAHSKQV
+				</data>
+				<hit pos="153" idx="1" pvalue="8.7e-17" match=" ++++++++++++++++++ + + +++ +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="3BHD_COMTE" comment="3-BETA-HYDROXYSTEROID DEHYDROGENASE (EC 1.1.1.51)" length="253">
+			<score strand="both" combined_pvalue="1.62e-23" evalue="5.3e-22"/>
+			<seg start="1">
+				<data>
+TNRLQGKVALVTGGASGVGLEVVKLLLGEGAKVAFSDINEAAGQQLAAELGERSMFVRHDVSSEADWTLVMAAVQ
+				</data>
+				<hit pos="6" idx="0" pvalue="2.5e-15" match="++++++++++++++++ ++ +"/>
+			</seg>
+			<seg start="76">
+				<data>
+RRLGTLNVLVNNAGILLPGDMETGRLEDFSRLLKINTESVFIGCQQGIAAMKETGGSIINMASVSSWLPIEQYAG
+YSASKAAVSALTRAAALSCRKQGYAIRVNSIHPDGIYTPMMQASLPKGVSKEMVLHDPKLNRAGRAYMPERIAQL
+				</data>
+				<hit pos="149" idx="1" pvalue="2.1e-15" match="+ +++++++++++++++++ +++++  ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="BA72_EUBSP" comment="7-ALPHA-HYDROXYSTEROID DEHYDROGENASE (EC 1.1.1.159) (BILE ACID 7-DEHYDROXYLASE) (BILE ACID-INDUCIBLE PROTEIN)" length="249">
+			<score strand="both" combined_pvalue="1.65e-23" evalue="5.5e-22"/>
+			<seg start="1">
+				<data>
+MNLVQDKVTIITGGTRGIGFAAAKIFIDNGAKVSIFGETQEEVDTALAQLKELYPEEEVLGFAPDLTSRDAVMAA
+				</data>
+				<hit pos="6" idx="0" pvalue="1.0e-14" match="+++ +++++ ++++++ ++ +"/>
+			</seg>
+			<seg start="151">
+				<data>
+SLSGVGYPASKASVIGLTHGLGREIIRKNIRVVGVAPGVVNTDMTNGNPPEIMEGYLKALPMKRMLEPEEIANVY
+				</data>
+				<hit pos="155" idx="1" pvalue="5.4e-16" match="  + +++++++++++ + +++ ++++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="GUTD_ECOLI" comment="SORBITOL-6-PHOSPHATE 2-DEHYDROGENASE (EC 1.1.1.140) (GLUCITOL-6- PHOSPHATE DEHYDROGENASE) (KETOSEPHOSPHATE REDUCTASE)" length="259">
+			<score strand="both" combined_pvalue="8.98e-23" evalue="3e-21"/>
+			<seg start="1">
+				<data>
+MNQVAVVIGGGQTLGAFLCHGLAAEGYRVAVVDIQSDKAANVAQEINAEYGESMAYGFGADATSEQSCLALSRGV
+				</data>
+				<hit pos="2" idx="0" pvalue="3.4e-10" match="++++++ ++++ ++  +++ +"/>
+			</seg>
+			<seg start="151">
+				<data>
+NSGYSAAKFGGVGLTQSLALDLAEYGITVHSLMLGNLLKSPMFQSLLPQYATKLGIKPDQVEQYYIDKVPLKRGC
+				</data>
+				<hit pos="152" idx="1" pvalue="8.7e-20" match="+ +++++++ +++++++++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="DHB3_HUMAN" comment="no comment" length="310">
+			<score strand="both" combined_pvalue="1.18e-22" evalue="3.9e-21"/>
+			<seg start="1">
+				<data>
+MGDVLEQFFILTGLLVCLACLAKCVRFSRCVLLNYYKVLPKSFLRSMGQWAVITGAGDGIGKAYSFELAKRGLNV
+				</data>
+				<hit pos="48" idx="0" pvalue="7.8e-15" match="++++++++++ +++++++ ++"/>
+			</seg>
+			<seg start="151">
+				<data>
+QSLIHCNITSVVKMTQLILKHMESRQKGLILNISSGIALFPWPLYSMYSASKAFVCAFSKALQEEYKAKEVIIQV
+				</data>
+				<hit pos="196" idx="1" pvalue="3.4e-15" match="++++++++++++++++++ +++ + + ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="BPHB_PSEPS" comment="BIPHENYL-CIS-DIOL DEHYDROGENASE (EC 1.3.1.-)" length="275">
+			<score strand="both" combined_pvalue="1.63e-20" evalue="5.4e-19"/>
+			<seg start="1">
+				<data>
+MKLKGEAVLITGGASGLGRALVDRFVAEAKVAVLDKSAERLAELETDLGDNVLGIVGDVRSLEDQKQAASRCVAR
+				</data>
+				<hit pos="5" idx="0" pvalue="2.1e-14" match="+ ++++++++++++++++ ++"/>
+			</seg>
+			<seg start="151">
+				<data>
+PLYTAAKQAIVGLVRELAFELAPYVRVNGVGPGGMNSDMRGPSSLGMGSKAISTVPLADMLKSVLPIGRMPEVEE
+				</data>
+				<hit pos="151" idx="1" pvalue="2.5e-13" match="+ ++++++++++++++++++++++  +  "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="LIGD_PSEPA" comment="C ALPHA-DEHYDROGENASE (EC -.-.-.-)" length="305">
+			<score strand="both" combined_pvalue="2.04e-20" evalue="6.7e-19"/>
+			<seg start="1">
+				<data>
+MKDFQDQVAFITGGASGAGFGQAKVFGQAGAKIVVADVRAEAVEKAVAELEGLGITAHGIVLDIMDREAYARAAD
+				</data>
+				<hit pos="6" idx="0" pvalue="1.4e-12" match="++++ +++++++ ++ +++ +"/>
+			</seg>
+			<seg start="151">
+				<data>
+SALAGPYSAAKAASINLMEGYRQGLEKYGIGVSVCTPANIKSNIAEASRLRPAKYGTSGYVENEESIASLHSIHQ
+				</data>
+				<hit pos="155" idx="1" pvalue="3.7e-15" match=" ++++++++ +++++ +++ + ++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="RFBB_NEIGO" comment="no comment" length="346">
+			<score strand="both" combined_pvalue="2.09e-20" evalue="6.9e-19"/>
+			<seg start="1">
+				<data>
+MQTEGKKNILVTGGAGFIGSAVVRHIIQNTRDSVVNLDKLTYAGNLESLTDIADNPRYAFEQVDICDRAELDRVF
+				</data>
+				<hit pos="6" idx="0" pvalue="1.2e-12" match="+++++++++++ ++ + +++ "/>
+			</seg>
+			<seg start="151">
+				<data>
+DLFTETTPYAPSSPYSASKAAADHLVRAWQRTYRLPSIVSNCSNNYGPRQFPEKLIPLMILNALSGKPLPVYGDG
+				</data>
+				<hit pos="163" idx="1" pvalue="3.4e-15" match="+++++++++ +++++++++ ++   ++ +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="DHCA_HUMAN" comment="no comment" length="276">
+			<score strand="both" combined_pvalue="4.62e-19" evalue="1.5e-17"/>
+			<seg start="1">
+				<data>
+SSGIHVALVTGGNKGIGLAIVRDLCRLFSGDVVLTARDVTRGQAAVQQLQAEGLSPRFHQLDIDDLQSIRALRDF
+				</data>
+				<hit pos="4" idx="0" pvalue="3.4e-15" match=" ++++++++++++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+PELQQKFRSETITEEELVGLMNKFVEDTKKGVHQKEGWPSSAYGVTKIGVTVLSRIHARKLSEQRKGDKILLNAC
+				</data>
+				<hit pos="191" idx="1" pvalue="4.5e-11" match="++++ ++ +++ +++ +++ +++++    "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="ADH_DROME" comment="ALCOHOL DEHYDROGENASE (EC 1.1.1.1)" length="255">
+			<score strand="both" combined_pvalue="4.42e-16" evalue="1.5e-14"/>
+			<seg start="1">
+				<data>
+SFTLTNKNVIFVAGLGGIGLDTSKELLKRDLKNLVILDRIENPAAIAELKAINPKVTVTFYPYDVTVPIAETTKL
+				</data>
+				<hit pos="6" idx="0" pvalue="1.8e-10" match="+++++   + +++++ +++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+LKTIFAQLKTVDVLINGAGILDDHQIERTIAVNYTGLVNTTTAILDFWDKRKGGPGGIICNIGSVTGFNAIYQVP
+VYSGTKAAVVNFTSSLAKLAPITGVTAYTVNPGITRTTLVHKFNSWLDVEPQVAEKLLAHPTQPSLACAENFVKA
+				</data>
+				<hit pos="150" idx="1" pvalue="1.1e-12" match="++++ ++++++++++++++    ++++ +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="FABI_ECOLI" comment="no comment" length="262">
+			<score strand="both" combined_pvalue="1.59e-15" evalue="5.3e-14"/>
+			<seg start="1">
+				<data>
+MGFLSGKRILVTGVASKLSIAYGIAQAMHREGAELAFTYQNDKLKGRVEEFAAQLGSDIVLQCDVAEDASIDTMF
+				</data>
+				<hit pos="6" idx="0" pvalue="6.4e-10" match="++++++++ ++ +  ++ ++ "/>
+			</seg>
+			<seg start="151">
+				<data>
+RAIPNYNVMGLAKASLEANVRYMANAMGPEGVRVNAISAGPIRTLAASGIKDFRKMLAHCEAVTPIRRTVTIEDV
+				</data>
+				<hit pos="157" idx="1" pvalue="1.1e-12" match=" +++ +++++++ +++++  +++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="YURA_MYXXA" comment="no comment" length="258">
+			<score strand="both" combined_pvalue="2.17e-14" evalue="7.1e-13"/>
+			<seg start="151">
+				<data>
+GFRGLPATRYSASKAFLSTFMESLRVDLRGTGVRVTCIYPGFVKSELTATNNFPMPFLMETHDAVELMGKGIVRG
+				</data>
+				<hit pos="158" idx="1" pvalue="8.3e-18" match="+ +++++++++ ++++++++++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="PCR_PEA" comment="no comment" length="399">
+			<score strand="both" combined_pvalue="2.49e-12" evalue="8.2e-11"/>
+			<seg start="76">
+				<data>
+SSSEGKKTLRKGNVVITGASSGLGLATAKALAESGKWHVIMACRDYLKAARAAKSAGLAKENYTIMHLDLASLDS
+				</data>
+				<hit pos="86" idx="0" pvalue="2.8e-15" match="+ +++++++++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="MAS1_AGRRA" comment="no comment" length="476">
+			<score strand="both" combined_pvalue="8.12e-11" evalue="2.7e-09"/>
+			<seg start="226">
+				<data>
+GRVLHFRRGFSHWTVEIHQSPVILVSGSNRGVGKAIAEDLIAHGYRLSLGARKVKDLEVAFGPQDEWLHYARFDA
+				</data>
+				<hit pos="245" idx="0" pvalue="6.2e-13" match="++++++ ++++++++++++++"/>
+			</seg>
+			<seg start="376">
+				<data>
+NINSMSGQRVLNPLVGYNMTKHALGGLTKTTQHVGWDRRCAAIDICLGFVATDMSAWTDLIASKDMIQPEDIAKL
+				</data>
+				<hit pos="390" idx="1" pvalue="2.3e-05" match="  + +++ ++ +++++ ++     +    "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="CSGA_MYXXA" comment="no comment" length="166">
+			<score strand="both" combined_pvalue="1.37e-09" evalue="4.5e-08"/>
+			<seg start="76">
+				<data>
+SLAANTDGGAYAYRMSKAALNMAVRSMSTDLRPEGFVTVLLHPGWVQTDMGGPDATLPAPDSVRGMLRVIDGLNP
+				</data>
+				<hit pos="86" idx="1" pvalue="5.8e-13" match="+++ ++++++ + ++++  ++++++ +  "/>
+			</seg>
+		</sequence>
+	</sequences>
+	<runtime host="IMB12-009806-LT" when="Fri Nov 20 17:17:37 2015" cycles="1224883" seconds="1.225"/>
+</mast>
