@@ -1,3 +1,8 @@
+EDIT: This is a hacked version of the MEME bioinformatics suite, which has
+been modified to include an extra "--allow-overlap" flag to "FIMO". This
+extra flag is required for SNP CRM annotation to work (see
+https://github.com/tomwhi/snpCrmAnnotation).
+
 ***Introduction***           
 
 The  MEME suite provides online tools for discovering and using protein and 
